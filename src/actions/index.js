@@ -1,4 +1,4 @@
-export const INCREMENT = 'INCREMENT';
+export const INCREMENT = 'INCREMENT'; //action type
 export const DECREMENT = 'DECREMENT';
 
 // Our action creators will return
@@ -9,10 +9,16 @@ export const DECREMENT = 'DECREMENT';
 // logic of updating the central Redux store. That
 // is left to the reducer(s).
 
-export const increment = () => {
+export const increment = () => { //action creator
   // Fill in this function
+  return {
+    type: INCREMENT
+  }
 };
 
 export const decrement = () => {
   // Fill in this function
+  return {
+    type: DECREMENT
+  }
 };
